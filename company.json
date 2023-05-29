@@ -1,13 +1,6 @@
 {
   "backoffice": {
     "apps": {
-      "company": {
-        "allowedRoles": [
-          "Expansion",
-          "Tech Team",
-          "Admin"
-        ]
-      },
       "employees": {
         "allowedRoles": [
           "Tech Team",
