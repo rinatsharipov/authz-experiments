@@ -12,8 +12,8 @@ allowedapps[app.name] {
 }
 
 
-allowedapps2[k] {
-  some k,app in data.backoffice.apps2
+allowedapps2[app] {
+  some name, app in data.backoffice.apps2
 
   print(app)
 
