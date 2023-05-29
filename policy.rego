@@ -2,8 +2,10 @@ package backoffice
 
 import future.keywords.in
 
-allowedapps[app] {
-  some app in data.backoffice.apps[_]
+allowedapps[app.name] {
+  some app in data.backoffice.apps
+
+  print(app)
 
   # with use key notation instead of .dot notation to prevent issues in case
   # role contains whitespaces
