@@ -1,0 +1,124 @@
+{
+  "backoffice": {
+    "apps": [
+      {
+        "name": "Company",
+        "allowedRoles": [
+          "Expansion",
+          "Tech Team",
+          "Admin"
+        ]
+      },
+      {
+        "name": "Employees",
+        "allowedRoles": [
+          "Tech Team",
+          "Admin"
+        ]
+      },
+      {
+        "name": "Kalendarik",
+        "allowedRoles": [
+          "Planner",
+          "Booking Center Manager",
+          "Booking Center Agent",
+          "Sales Conversion",
+          "Clinic Sales Manager",
+          "Clinic Sales Agent",
+          "Patient Care Manager",
+          "Patient Care Agent",
+          "Medical Team",
+          "Medical consultant",
+          "VS Team",
+          "Marketing",
+          "Tech Team",
+          "Admin"
+        ]
+      },
+      {
+        "name": "Locations",
+        "allowedRoles": [
+          "Expansion",
+          "Workflow Managers",
+          "Planner",
+          "Tech Team",
+          "Admin"
+        ]
+      },
+      {
+        "name": "Monitoring",
+        "allowedRoles": [
+          "Patient Care Manager",
+          "Patient Care Agent",
+          "Medical Team",
+          "Medical Consultant",
+          "Admin"
+        ]
+      },
+      {
+        "name": "Patients",
+        "allowedRoles": [
+          "Booking Center Manager",
+          "Booking Center Agent",
+          "Sales Conversion",
+          "Clinic Sales Manager",
+          "Clinic Sales Agent",
+          "Patient Care Manager",
+          "Patient Care Agent",
+          "Medical Team",
+          "Medical consultant",
+          "VS Team",
+          "TX Planners",
+          "Factory",
+          "Logistics",
+          "Patient Finance",
+          "Marketing",
+          "Admin"
+        ]
+      },
+      {
+        "name": "Workflow Builder",
+        "allowedRoles": [
+          "Workflow Managers",
+          "Tech Team",
+          "Admin"
+        ]
+      },
+      {
+        "name": "Task manager",
+        "allowedRoles": [
+          "Expansion",
+          "Workflow Managers",
+          "Planner",
+          "Booking Center Manager",
+          "Booking Center Agent",
+          "Sales Conversion ",
+          "Clinic Sales Manager",
+          "Clinic Sales Agent",
+          "Patient Care Manager",
+          "Patient Care Agent",
+          "Medical Team",
+          "Medical consultant",
+          "VS Team",
+          "TX Planners",
+          "Factory",
+          "Logistics",
+          "Patient Finance",
+          "Marketing",
+          "Tech Team",
+          "Admin"
+        ]
+      },
+      {
+        "name": "Scheduler",
+        "allowedRoles": [
+          "Planner",
+          "Booking Center Manager",
+          "Patient Care Manager",
+          "Tech Team",
+          "Admin"
+        ]
+      }
+    ]
+  }
+}
