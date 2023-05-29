@@ -1,32 +1,20 @@
 {
   "backoffice": {
-    "apps2": {
+    "apps": {
       "company": {
         "allowedRoles": [
           "Expansion",
           "Tech Team",
           "Admin"
         ]
-      }
-    },
-    "apps": [
-      {
-        "name": "Company",
-        "allowedRoles": [
-          "Expansion",
-          "Tech Team",
-          "Admin"
-        ]
       },
-      {
-        "name": "Employees",
+      "employees": {
         "allowedRoles": [
           "Tech Team",
           "Admin"
         ]
       },
-      {
-        "name": "Kalendarik",
+      "kalendarik": {
         "allowedRoles": [
           "Planner",
           "Booking Center Manager",
@@ -44,8 +32,7 @@
           "Admin"
         ]
       },
-      {
-        "name": "Locations",
+      "locations": {
         "allowedRoles": [
           "Expansion",
           "Workflow Managers",
@@ -54,8 +41,7 @@
           "Admin"
         ]
       },
-      {
-        "name": "Monitoring",
+      "monitoring": {
         "allowedRoles": [
           "Patient Care Manager",
           "Patient Care Agent",
@@ -64,8 +50,7 @@
           "Admin"
         ]
       },
-      {
-        "name": "Patients",
+      "patients": {
         "allowedRoles": [
           "Booking Center Manager",
           "Booking Center Agent",
@@ -85,16 +70,14 @@
           "Admin"
         ]
       },
-      {
-        "name": "Workflow Builder",
+      "workflow builder": {
         "allowedRoles": [
           "Workflow Managers",
           "Tech Team",
           "Admin"
         ]
       },
-      {
-        "name": "Task manager",
+      "task manager": {
         "allowedRoles": [
           "Expansion",
           "Workflow Managers",
@@ -118,8 +101,7 @@
           "Admin"
         ]
       },
-      {
-        "name": "Scheduler",
+      "scheduler": {
         "allowedRoles": [
           "Planner",
           "Booking Center Manager",
@@ -128,6 +110,6 @@
           "Admin"
         ]
       }
-    ]
+    }
   }
 }
