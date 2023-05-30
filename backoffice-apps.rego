@@ -9,8 +9,8 @@ allowedapps[app_name] {
 }
 
 allowedbookingtypes[booking_type_name] {
-  some booking_name, booking_value in data.backoffice.booking.types
-  hasPermission(input[roles], app_value.allowedRoles)
+  some booking_type_name, booking_type_value in data.backoffice.booking.types
+  hasPermission(input[roles], booking_type_value.allowedRoles)
 }
 
 
