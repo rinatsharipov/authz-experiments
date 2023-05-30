@@ -3,7 +3,7 @@ package utils
 import future.keywords.in
 
 hasPermission(grants, roles) {
-    any(hasPermissionByRole(grants, roles), accessibleByAnyone(roles))
+    any([hasPermissionByRole(grants, roles), accessibleByAnyone(roles)])
 }
 
 hasPermissionByRole(grants, roles) {
