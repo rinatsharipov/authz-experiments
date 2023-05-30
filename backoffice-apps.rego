@@ -1,5 +1,7 @@
 package backoffice
 
+import future.keywords.in
+
 allowedapps[app_name] {
   some app_name, app_value in data.backoffice.apps
   utils.hasPermissionByRole(input[roles], app_value.allowedRoles)
