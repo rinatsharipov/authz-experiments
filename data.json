@@ -1,11 +1,18 @@
 {
   "backoffice": {
-    "uicomponents": {
-      "booking-widget": {
-        "allowedRoles": [
-          "Tech Team",
-          "Admin"
-        ]
+    "booking": {
+      "types": {
+        "first_visit_*": {
+          "allowedRoles": [
+            "*"
+          ]
+        },
+        "follow_up_*": {
+          "allowedRoles": [
+            "Medical Team",
+            "Medical consultant"
+          ]
+        }
       }
     },
     "apps": {

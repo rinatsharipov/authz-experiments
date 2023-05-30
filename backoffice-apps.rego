@@ -8,7 +8,9 @@ allowedapps[app_name] {
   hasPermission(input[roles], app_value.allowedRoles)
 }
 
-alloweduicomponents[component_name] {
-  some component_name, component_value in data.backoffice.uicomponents
-  hasPermission(input[roles], component_value.allowedRoles)
+allowedbookingtypes[booking_type_name] {
+  some booking_name, booking_value in data.backoffice.booking.types
+  hasPermission(input[roles], app_value.allowedRoles)
 }
+
+
