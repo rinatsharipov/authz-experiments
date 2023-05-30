@@ -10,5 +10,5 @@ allowedapps[app_name] {
 
 alloweduicomponents[component_name] {
   some component_name, component_value in data.backoffice.uicomponents
-  hasPermissionByRole(input[roles], app_value.allowedRoles)
+  hasPermissionByRole(input[roles], component_value.allowedRoles)
 }
