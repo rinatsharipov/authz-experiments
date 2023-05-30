@@ -6,7 +6,7 @@ import data.utils.accessibleByAnyone
 
 allowedapps[app_name] {
   some app_name, app_value in data.backoffice.apps
-  hasPermission(input[roles], component_value.allowedRoles)
+  hasPermission(input[roles], app_value.allowedRoles)
 }
 
 alloweduicomponents[component_name] {
