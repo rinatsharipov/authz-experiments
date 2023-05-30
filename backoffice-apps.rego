@@ -13,7 +13,7 @@ allowedbookingtypes[booking_type_name] {
   hasPermission(input[roles], booking_type_value.allowedRoles)
 }
 
-allow if {
+allowbooking := true {
   some allowed_booking_type in allowedbookingtypes
   regex.template_match(allowed_booking_type, input[bookingType])
 }
