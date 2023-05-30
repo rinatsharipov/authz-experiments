@@ -1,10 +1,12 @@
 {
   "backoffice": {
     "uicomponents": {
-      "allowedRoles": [
-        "Tech Team",
-        "Admin"
-      ]
+      "booking-widget": {
+        "allowedRoles": [
+          "Tech Team",
+          "Admin"
+        ]
+      }
     },
     "apps": {
       "employees": {
