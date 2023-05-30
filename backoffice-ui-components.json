@@ -1,0 +1,12 @@
+{
+  "ui": {
+    "components": {
+      "booking-widget": {
+        "allowedRoles": [
+          "Tech Team",
+          "Admin"
+        ]
+      }
+    }
+  }
+}
