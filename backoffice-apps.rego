@@ -15,6 +15,6 @@ allowedbookingtypes[booking_type_name] {
 
 allowbooking := true {
   some allowed_booking_type in allowedbookingtypes
-  regex.template_match(allowed_booking_type, input[bookingType])
+  regex.match(allowed_booking_type, input[bookingType])
 }
 
