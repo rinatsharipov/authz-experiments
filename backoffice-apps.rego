@@ -25,7 +25,7 @@ default allowrequest := false
 allowrequest := true {
     some role in input.user.roles
     role in  input.securityContext.allowedRoles
-    input.user.roles in input.securityContext.allowedRoles
+
     #if isCreateBookingAction(input.action) {
     #    isBookingTypeAllowed(input.action.type)
     #}
