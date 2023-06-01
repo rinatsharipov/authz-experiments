@@ -1,0 +1,22 @@
+{
+  "input": {
+    "user": {
+      "roles": [
+        "Admin"
+      ]
+    },
+    "action": {
+      "type": "create",
+      "resource": "booking",
+      "properties": {
+        "type": "first_visit_internal"
+      }
+    },
+    "securityContext": {
+      "allowedRoles": [
+        "Admin",
+        "Medical Team"
+      ]
+    }
+  }
+}

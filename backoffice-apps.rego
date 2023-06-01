@@ -20,3 +20,36 @@ allowbooking := true {
   regex.match(allowed_booking_type, input[bookingType])
 }
 
+default allowrequest := false
+
+allowrequest := true {
+    some role in input.user.roles
+    role in  input.securityContext.allowedRoles
+    input.user.roles in input.securityContext.allowedRoles
+    #if isCreateBookingAction(input.action) {
+    #    isBookingTypeAllowed(input.action.type)
+    #}
+}
+
+#request_allowed := true {
+#    input.user.roles in input.securityContext.allowedRoles
+
+#    if isCreateBookingAction(input.action) {
+#        isBookingTypeAllowed(input.action.type)
+#    }
+#}
+
+isCreateBookingAction(action) {
+    action.type == "create"
+    action.resource == "booking"
+}
+
+isBookingTypeAllowed(bookingTypeName) {
+    some allowed_booking_type in allowedbookingtypes
+    regex.match(allowed_booking_type, input[bookingType])
+}
+
+booking_create_allowed {
+    input.action.resource.properties.type in allowedbookingtypes
+}
+
