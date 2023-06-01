@@ -27,7 +27,7 @@ allowrequest := true {
     role in  input.securityContext.allowedRoles
 
     isCreateBookingAction(input.action)
-    isBookingTypeAllowed(input.action.type)
+    #isBookingTypeAllowed(input.action.type)
 }
 
 #request_allowed := true {
