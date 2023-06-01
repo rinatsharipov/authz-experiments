@@ -2,6 +2,7 @@ package backoffice
 
 import future.keywords.in
 import data.utils.hasPermission
+import data.backoffice.booking
 
 allowedapps[app_name] {
   some app_name, app_value in data.backoffice.apps
@@ -26,29 +27,9 @@ allowrequest := true {
     some role in input.user.roles
     role in  input.securityContext.allowedRoles
 
-    isCreateBookingAction(input.action)
-    isBookingTypeAllowed(input.action.properties.type)
+    allowActionWithResource(input.action.resource)
 }
 
-#request_allowed := true {
-#    input.user.roles in input.securityContext.allowedRoles
-
-#    if isCreateBookingAction(input.action) {
-#        isBookingTypeAllowed(input.action.type)
-#    }
-#}
-
-isCreateBookingAction(action) {
-    action.type == "create"
-    action.resource == "booking"
+allowActionWithResource("booking", type, properties) := {
+    data.backoffice.booking.allowAction(type, properties)
 }
-
-isBookingTypeAllowed(bookingTypeName) {
-    some allowed_booking_type in allowedbookingtypes
-    regex.match(allowed_booking_type, bookingTypeName)
-}
-
-booking_create_allowed {
-    input.action.resource.properties.type in allowedbookingtypes
-}
-

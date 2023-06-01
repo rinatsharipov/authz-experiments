@@ -9,7 +9,7 @@
       "type": "create",
       "resource": "booking",
       "properties": {
-        "type": "first_visit_internal"
+        "type": "treatment_internal"
       }
     },
     "securityContext": {
