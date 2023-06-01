@@ -5,5 +5,5 @@ allowAction(actionType, properties) {
 }
 
 allowActionWithBooking("create", properties) {
-    action.resource == "booking"
+    properties.type == "treatment_internal"
 }
