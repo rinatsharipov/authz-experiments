@@ -45,7 +45,7 @@ isCreateBookingAction(action) {
 
 isBookingTypeAllowed(bookingTypeName) {
     some allowed_booking_type in allowedbookingtypes
-    regex.match(allowed_booking_type, input[bookingType])
+    regex.match(allowed_booking_type, bookingTypeName)
 }
 
 booking_create_allowed {
