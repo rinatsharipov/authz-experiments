@@ -27,7 +27,7 @@ allowrequest := true {
     some role in input.user.roles
     role in  input.securityContext.allowedRoles
 
-    allowActionWithResource(input.action.resource)
+    allowActionWithResource(input.action.resource, input.action.type, input.action.properties)
 }
 
 allowActionWithResource("booking", type, properties) := {
